@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Valley Book Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&family=Roboto:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- Header -->
+        <header>
+            <h1>Welcome to Green Valley Book Club </h1>
+        </header>
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">Book Review</a></li>
+                <li><a href="#">Opening Hours</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Intro -->
+        <div id="intro">
+            <h2>Welcome to Green Valley Book Club</h2>
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" width="350">
+            <p>Our book club is a place where students read books, talk about stories, and have fun together.</p>
+        </div>
+
+        <!-- Main Section -->
+        <div id="main-section">
+
+            <!-- Teachers -->
+            <div class="main-section-content">
+                <h2>Meet our teachers</h2>
+
+                <div id="teachers">
+
+                    <div class="teacher-info">
+                        <div>
+                            <img src="data:image/jpeg;base64,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"
+                                width="250">
+                        </div>
+                        <div>
+                            <h3>Miss Olivia</h3>
+                            <p>She teaches young children and helps them enjoy reading.</p>
+                        </div>
+                    </div>
+
+                    <div class="teacher-info">
+                        <div>
+                            <img src="data:image/jpeg;base64,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"
+                                width="250">
+                        </div>
+                        <div>
+                            <h3>Mr Robert</h3>
+                            <p>He teaches older students and loves reading books with them.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Opening hours -->
+            <div class="main-section-content">
+                <h2>Opening & Closing Time</h2>
+
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Opens</th>
+                        <th>Closes</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9:00 AM</td>
+                        <td>4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>9:00 AM</td>
+                        <td>4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9:00 AM</td>
+                        <td>3:00 PM</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Book Reviews -->
+            <div class="main-section-content">
+                <h2>Book Review</h2>
+
+                <h3>The Secret Garden</h3>
+                <p><strong>Sara:</strong> <q>I liked this book. It was very nice.</q></p>
+                <p><strong>Ravi:</strong> <q>The story was simple and beautiful.</q></p>
+            </div>
+
+            <!-- Audio & Video -->
+            <div class="main-section-content">
+                <h2>Watch This ....</h2>
+
+                <audio controls>
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
+                        type="audio/mpeg">
+                </audio>
+
+                <br>
+                <br>
+
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/mbCJqdrzwcE" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p><span>Contact Us:</span> Green Valley Book Club</p>
+            <p><span>Phone:</span> 1234567890</p>
+            <address>XYZ Street</address>
+        </footer>
+    </div>
+    
+</body>
+</html>
