@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Valley Book Club</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dbe7db;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0d3b0d;
+        }
+
+        h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #a8d5a8;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #145214;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            border: 2px solid black;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-areas:
+                "header header header header intro"
+                "nav nav nav nav intro"
+                "main main main main bestsellers"
+                "footer footer footer footer footer";
+            gap: 20px;
+        }
+
+        header {
+            grid-area: header;
+            padding: 20px;
+            background-color: #b9e0b9;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #d1f0d1;
+            padding: 15px;
+        }
+
+        #intro {
+            grid-area: intro;
+            background-color: #e0f5e0;
+            padding: 15px;
+        }
+
+        #main {
+            grid-area: main;
+            padding: 20px;
+        }
+
+        #bestsellers {
+            grid-area: bestsellers;
+            padding: 15px;
+            background-color: #c6e6c6;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #b9e0b9;
+            padding: 20px;
+        }
+
+        #teachers {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .teacher {
+            background-color: #e0f0e0;
+            padding: 15px;
+            width: 45%;
+        }
+
+        .book-review {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .review-box {
+            background-color: #e0f0e0;
+            padding: 15px;
+            width: 300px;
+        }
+
+        .best-sellers-list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .best-sellers-list div {
+            background-color: #d9f2d9;
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 10px auto;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        address {
+            display: inline-block;
+            background-color: #e0f0e0;
+            padding: 10px;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header>
+            <h1>Green Valley Book Club</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Teachers</a></li>
+                <li><a href="#">Book Review</a></li>
+                <li><a href="#">Opening Hours</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="intro">
+            <h2>Welcome!</h2>
+            <p>Our book club is a place where students read books, talk about stories, and have fun together.</p>
+        </section>
+
+        <section id="main">
+            <h2>Meet our Teachers</h2>
+            <div id="teachers">
+                <div class="teacher">
+                    <h3>Miss Olivia</h3>
+                    <p>She teaches young children and helps them enjoy reading.</p>
+                </div>
+                <div class="teacher">
+                    <h3>Mr Robert</h3>
+                    <p>He teaches older students and loves reading books with them.</p>
+                </div>
+            </div>
+
+            <h2>Book Review</h2>
+            <div class="book-review">
+                <div class="review-box">
+                    <h3>The Secret Garden</h3>
+                    <p><strong>Sara:</strong> I liked this book.</p>
+                    <p><strong>Ravi:</strong> The story was simple and beautiful.</p>
+                </div>
+            </div>
+
+            <h2>Opening & Closing Time</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Opens</th>
+                    <th>Closes</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>9:00 AM</td>
+                    <td>4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>9:00 AM</td>
+                    <td>4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>9:00 AM</td>
+                    <td>3:00 PM</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="bestsellers">
+            <h2>Best Sellers</h2>
+            <div class="best-sellers-list">
+                <div><b>Matilda</b> by Roald Dahl</div>
+                <div><b>Winnie-the-Pooh</b> by A. A. Milne</div>
+                <div><b>The Jungle Book</b> by Rudyard Kipling</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Contact Us</p>
+            <p>Phone No: 1234567890</p>
+            <address>Xyzz</address>
+        </footer>
+
+    </div>
+</body>
+
+</html>
